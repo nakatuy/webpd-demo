@@ -20,7 +20,7 @@
 	<script type="text/javascript" src="./js/webpd-latest.min.js"></script>
 	<script>
         var patch
-        $.get('./asset1/myPatch.pd', function(patchStr) {
+        $.get('https://creative-plus.net/webpd-demo/asset1/myPatch.pd', function(patchStr) {
           patch = Pd.loadPatch(patchStr)
           Pd.start()
         })
