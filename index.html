@@ -18,11 +18,11 @@
 
 	<!-- WebPd -->
 	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/js/webpd-latest.min.js"></script>
+	
 	<script>
         var patch
         $.get('https://creative-plus.net/webpd-demo/asset1/myPatch.pd', function(patchStr) {
-          patch = Pd.loadPatch(patchStr)
-          Pd.start()
+          patch = Pd.loadPatch(patchStr)  
         })
     </script>
 
@@ -83,6 +83,7 @@
 		<div class="col-md-12 top-space">
 			<h1><div style="font-size: 5.5vw">WebPd Demo</div></h1>
 			<div id="RealtimeClockArea" style="font-size: 2.5vw"></div>
+			<input type="button" onclick="Pd.start()" value="SOUND ON" class="btn btn-primary">
 		</div>
 	</div>
 	<!-- コンテンツ -->
