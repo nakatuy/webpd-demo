@@ -1,4 +1,3 @@
-var patch
 
 
 function set2fig(num) {
@@ -19,8 +18,3 @@ function showClock() {
 }
 setInterval('showClock()',1000);
 
-
-$.get('./patches/myPatch.pd', function(patchStr) {
-  patch = Pd.loadPatch(patchStr)
-  Pd.start()
-})
