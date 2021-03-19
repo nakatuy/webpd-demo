@@ -29,7 +29,6 @@ const loop = new Tone.Loop((time) => {
     playSynth();
 }, 20000).start(0);
 
-Tone.Transport.start();
 
 function audioPlay(){
     Tone.Transport.start();
