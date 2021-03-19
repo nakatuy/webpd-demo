@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>WebPd Demo | By Creative Plus</title>
+    <title>WebPd & Tone.js Demo | By Creative Plus</title>
 
-	<meta name="keywords" content="WebPd,PureData">
-    <meta name="description" content="WebPd Demo">
+	<meta name="keywords" content="WebPd,Tone.js,PureData">
+    <meta name="description" content="WebPd & Tone.js Demo">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="./style.css" rel="stylesheet">
@@ -18,15 +18,19 @@
 
 	<!-- WebPd -->
 	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/js/webpd-latest.min.js"></script>
-	
+	<!-- Tone.js -->
+	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/js/Tone.js"></script>
+
 	<script>
         var patch
-        $.get('https://creative-plus.net/webpd-demo/asset2/myPatch.pd', function(patchStr) {
-          patch = Pd.loadPatch(patchStr)  
+        $.get('./asset2/myPatch.pd', function(patchStr) {
+          patch = Pd.loadPatch(patchStr)
+		  Pd.start() 
         })
     </script>
 
 	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/asset2/nowClock.js"></script>
+	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/asset2/toneSound.js"></script>
 
 	<!-- ファビコン -->
 	<link rel="icon" href="./icon/favicon.ico">
@@ -34,7 +38,7 @@
 	<!-- スマホ用アイコン -->
 	<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
 
-	<!-- Global site tag (gtag.js) - Google Analytics 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360150-1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -42,7 +46,7 @@
 	gtag('js', new Date());
 
 	gtag('config', 'UA-115360150-1');
-	</script>-->
+	</script>
 
   </head>
   <body>
@@ -81,9 +85,9 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12 top-space">
-			<h1><div style="font-size: 5.5vw">WebPd Demo</div></h1>
+			<h1><div style="font-size: 5.5vw">WebPd and Tone.js Demo</div></h1>
 			<div id="RealtimeClockArea" style="font-size: 2.5vw"></div>
-			<input type="button" onclick="Pd.start();audioPlay()" value="SOUND ON" class="btn btn-primary">
+			<input type="button" onclick="audioPlay()" value="SOUND ON" class="btn btn-primary">
 		</div>
 	</div>
 	<!-- コンテンツ -->
@@ -98,6 +102,7 @@
 			</div>
 			<div class="row contents-margin">
 				<div class="col-md-12">
+					<div id="pdMidi" style="font-size: 2.5vw"></div>
 					<img src="./asset2/bg.png" alt="" width="100%">
 				</div>		
 			</div>
