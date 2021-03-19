@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>WebPd Demo | By Creative Plus</title>
+
+	<meta name="keywords" content="WebPd,PureData">
+    <meta name="description" content="WebPd Demo">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="./style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+
+	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/js/jquery-3.5.1.min.js"></script>
+
+	<!-- WebPd -->
+	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/js/webpd-latest.min.js"></script>
+	
+	<script>
+        var patch
+        $.get('https://creative-plus.net/webpd-demo/asset2/myPatch.pd', function(patchStr) {
+          patch = Pd.loadPatch(patchStr)  
+        })
+    </script>
+
+	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/asset2/nowClock.js"></script>
+
+	<!-- ファビコン -->
+	<link rel="icon" href="./icon/favicon.ico">
+ 
+	<!-- スマホ用アイコン -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
+
+	<!-- Global site tag (gtag.js) - Google Analytics 
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360150-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-115360150-1');
+	</script>-->
+
+  </head>
+  <body>
+
+<div class="container-fluid">
+	<!-- ヘッダー -->
+	<div class="row sticky-top">
+		<div class="col-md-1 page-header">
+		</div>
+		<div class="col-md-10 page-header">
+			<nav class="navbar navbar-expand-sm navbar-dark">
+				<a class="navbar-brand" href="https://creative-plus.net/">Creative Plus</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="https://blog.creative-plus.net/">Blog Media</span></a>
+						</li>
+						<!--<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Tools
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="./index.html">Midi Number Tools</a>
+								<a class="dropdown-item" href="#">New Tools</a>
+							</div>
+						</li>-->
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="col-md-1 page-header">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 top-space">
+			<h1><div style="font-size: 5.5vw">WebPd Demo</div></h1>
+			<div id="RealtimeClockArea" style="font-size: 2.5vw"></div>
+			<input type="button" onclick="Pd.start()" value="SOUND ON" class="btn btn-primary">
+		</div>
+	</div>
+	<!-- コンテンツ -->
+	<div class="row">
+		<div class="col-md-1"><!-- 全体余白 -->
+		</div>
+		<div class="col-md-10"><!-- メインコンテンツ　ここから -->
+			<div class="row"><!-- コンテンツタイトル -->
+				<div class="col-md-12 contents-title anchor">
+					<h2></h2>
+				</div>
+			</div>
+			<div class="row contents-margin">
+				<div class="col-md-12">
+					<img src="./asset2/bg.png" alt="" width="100%">
+				</div>		
+			</div>
+		</div><!-- メインコンテンツ　ここまで -->
+		<div class="col-md-1"><!-- 全体余白 -->
+		</div>
+	</div>
+	<div class="row"><!-- Footer -->
+		<div class="col-md-12 page-footer">
+			<div align="center" style="font-size:75%">Copyright© Creative Plus , 2021 All Rights Reserved.</div>
+		</div>
+	</div>
+</div>
+
+
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+	
+</body>
+</html>
