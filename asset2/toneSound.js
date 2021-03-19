@@ -36,7 +36,7 @@ function audioPlay(){
 
 function display(){
     Pd.receive('midiNo', function(args) {
-        outfreq = "Frequency：" + args.toFixed(2) + " Hz";
+        outfreq = "Frequency：" + Math.floor(args*100)/100 + " Hz";
         document.getElementById("pdMidi").innerHTML = outfreq;
     })
 }
