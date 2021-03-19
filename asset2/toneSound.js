@@ -32,7 +32,7 @@ const loop = new Tone.Loop((time) => {
 Tone.Transport.start();
 
 function audioPlay(){
-    
+    Tone.Transport.start();
 }
 
 function display(){
