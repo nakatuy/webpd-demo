@@ -24,7 +24,8 @@
 	<script>
         var patch
         $.get('./asset2/myPatch.pd', function(patchStr) {
-          patch = Pd.loadPatch(patchStr) 
+          patch = Pd.loadPatch(patchStr)
+		  Pd.start()
         })
     </script>
 
@@ -37,7 +38,7 @@
 	<!-- スマホ用アイコン -->
 	<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<!-- Global site tag (gtag.js) - Google Analytics 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115360150-1"></script>
 	<script>
 	window.dataLayer = window.dataLayer || [];
@@ -45,7 +46,7 @@
 	gtag('js', new Date());
 
 	gtag('config', 'UA-115360150-1');
-	</script>
+	</script>-->
 
   </head>
   <body>
@@ -86,7 +87,7 @@
 		<div class="col-md-12 top-space">
 			<h1><div style="font-size: 5.5vw">WebPd and Tone.js Demo</div></h1>
 			<div id="RealtimeClockArea" style="font-size: 2.5vw"></div>
-			<input type="button" onclick="Pd.start();audioPlay()" value="SOUND ON" class="btn btn-primary">
+			<input type="button" onclick="audioPlay()" value="SOUND ON" class="btn btn-primary">
 		</div>
 	</div>
 	<!-- コンテンツ -->
