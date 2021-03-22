@@ -29,7 +29,7 @@
     </script>
 
 	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/asset2/nowClock.js"></script>
-	<script type="text/javascript" src="./asset2/toneSound.js"></script>
+	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/asset2/toneSound.js"></script>
 
 	<!-- ファビコン -->
 	<link rel="icon" href="./icon/favicon.ico">
@@ -85,8 +85,8 @@
 	<div class="row">
 		<div class="col-md-12 top-space">
 			<h1><div style="font-size: 5.5vw">WebPd and Tone.js Demo</div></h1>
-			<input type="button" onclick="Tone.Transport.start()" value="SOUND ON" class="btn btn-primary">
-			<input type="button" onclick="Pd.start()" value="SOUND ON" class="btn btn-primary">
+			<!--<input type="button" onclick="Tone.Transport.start()" value="SOUND ON" class="btn btn-primary">-->
+			<input type="button" onclick="Pd.start();playSynth()" value="SOUND ON" class="btn btn-primary">
 		</div>
 	</div>
 	<!-- コンテンツ -->
