@@ -5,28 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>WebPd Demo | By Creative Plus</title>
+    <title>Use WebPd Demo | By Creative Plus</title>
 
-	<meta name="keywords" content="WebPd,PureData">
-    <meta name="description" content="WebPd Demo">
+	<meta name="keywords" content="WebPd,PureData,Tone.js">
+    <meta name="description" content="Use WebPd">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="./style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 
 	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/js/jquery-3.5.1.min.js"></script>
-
-	<!-- WebPd -->
-	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/js/webpd-latest.min.js"></script>
-	
-	<script>
-        var patch
-        $.get('https://creative-plus.net/webpd-demo/asset1/myPatch.pd', function(patchStr) {
-          patch = Pd.loadPatch(patchStr)  
-        })
-    </script>
-
-	<script type="text/javascript" src="https://creative-plus.net/webpd-demo/asset1/nowClock.js"></script>
 
 	<!-- ファビコン -->
 	<link rel="icon" href="./icon/favicon.ico">
@@ -81,9 +69,7 @@
 	</div>
 	<div class="row">
 		<div class="col-md-12 top-space">
-			<h1><div style="font-size: 5.5vw">WebPd Demo</div></h1>
-			<div id="RealtimeClockArea" style="font-size: 2.5vw"></div>
-			<input type="button" onclick="Pd.start()" value="SOUND ON" class="btn btn-primary">
+			<h1><div style="font-size: 5.5vw">Use WebPd</div></h1>
 		</div>
 	</div>
 	<!-- コンテンツ -->
@@ -91,15 +77,22 @@
 		<div class="col-md-1"><!-- 全体余白 -->
 		</div>
 		<div class="col-md-10"><!-- メインコンテンツ　ここから -->
-			<div class="row"><!-- コンテンツタイトル -->
-				<div class="col-md-12 contents-title anchor">
-					<h2></h2>
-				</div>
-			</div>
 			<div class="row contents-margin">
-				<div class="col-md-12">
-					<img src="./asset1/bg.png" alt="" width="100%">
-				</div>		
+				<div class="col-md-6">
+					<h2 class="contents-title">WebPd only</h2>
+					<a href="https://creative-plus.net/webpd-demo/webpd-Demo1.html">webpd-Demo1.html</a><br>
+					<a href="https://creative-plus.net/webpd-demo/webpd-Demo1.html"><img src="./asset1/bg.png" width="100%"></a><br>
+					<br>
+					<iframe width="480" height="270" src="https://www.youtube.com/embed/ieQelgTKZ0w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+				</div>
+				<div class="col-md-6">
+					<h2 class="contents-title">WebPd and Tone.js</h2>
+					<a href="https://creative-plus.net/webpd-demo/webpd-ToneJS-Demo1.html">webpd-ToneJS-Demo1.html</a><br>
+					<a href="https://creative-plus.net/webpd-demo/webpd-ToneJS-Demo1.html"><img src="./asset2/bg.png" width="100%"></a><br>
+					<br>
+					<iframe width="480" height="270" src="https://www.youtube.com/embed/T7pLPPW6mYE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div><!-- メインコンテンツ　ここまで -->
 		<div class="col-md-1"><!-- 全体余白 -->
