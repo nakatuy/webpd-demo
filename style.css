@@ -55,6 +55,12 @@ a:hover{
     top: 0; /*canvasを上に固定*/
 }
 
+/* Cables BackGround */
+#glcanvas{
+    position: fixed; /*canvasを固定*/
+    top: 0; /*canvasを上に固定*/
+}
+
 
 /* anchor space (https://y-com.info/contents/?p=5641) */
 .anchor{
