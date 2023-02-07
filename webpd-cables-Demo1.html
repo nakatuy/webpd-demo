@@ -25,7 +25,7 @@
 
 	<!-- ファビコン -->
 	<link rel="icon" href="./icon/favicon.ico">
- 
+
 	<!-- スマホ用アイコン -->
 	<link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
 
@@ -79,14 +79,14 @@
 			<!--<div class="row">
 				<div class="col-md-12 contents-title anchor">
 					<h2></h2>
-					
+
 				</div>
 			</div>-->
 			<div class="row contents-margin"style="padding: 50px 0px 200px;">
 				<div class="col-md-12" id="settingScreen">
 					<div id="RealtimeClockArea" style="font-size: 2.5vw"></div>
 					<img src="./asset4/bg.png" style="opacity: 0.65;" width="100%" >
-				</div>	
+				</div>
 			</div>
 		</div><!-- メインコンテンツ　ここまで -->
 		<div class="col-md-1"><!-- 全体余白 -->
@@ -95,6 +95,7 @@
 	<div class="row"><!-- Footer -->
 		<div class="col-md-12 page-footer">
 			<div id="copyRights" style="font-size:75%; text-align: center;"></div>
+			<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="creativeplus" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF5F5F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 		</div>
 	</div>
 </div>
@@ -112,7 +113,7 @@
 
 		function setWindow(){
 			const settingScreen = document.getElementById("settingScreen");
-		
+
 			if(settingScreen.style.visibility=="visible"){
 				// hiddenで非表示
 				settingScreen.style.visibility ="hidden";
@@ -160,9 +161,9 @@
 			Pd.receive('midiNo', function(args) {
 				CABLES.patch.setVariable("webPd_1",args); //cablesに渡す("ID名",値)
 			})
-			
+
 		});
-		
+
 	</script>
 </body>
 </html>
